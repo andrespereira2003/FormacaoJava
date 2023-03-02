@@ -15,23 +15,15 @@ public class Produtos {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public double getPreco() {
         return preco;
     }
 
-    public void setPreco(float preco) {
-        this.preco = preco;
+    public void gastastock() {
+        this.stock -= 1;
     }
 
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+    public int getStock() {
+        return stock;
     }
 }
